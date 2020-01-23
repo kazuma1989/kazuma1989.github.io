@@ -6,24 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <title>kazuma1989</title>
+
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        background-color: black;
+        color: gainsboro;
+      }
+      a:any-link {
+        color: darkgray;
+        text-decoration: none;
+      }
+      a:hover {
+        color: gainsboro;
+        text-decoration: underline;
+      }
+
+      .card {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .card > pre {
+        font-size: min(2.5vw, 2.5vh);
+        font-family: Menlo, Consolas, Monaco, "Lucida Console",
+          "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+          "Courier New", monospace;
+      }
+
+      .blink {
+        animation: blink 1s step-end infinite;
+      }
+      @keyframes blink {
+        75% {
+          opacity: 0;
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <pre>
+    <div class="card">
+      <pre>
+$ npx kazuma1989
 ╭─────────────────────────────────────────────────────────────╮
 │                                                             │
 │              Kazuma Ebina / @kazuma1989                     │
 │                                                             │
-│       Work:  Frontend web developer at Quipper/Recruit MP   │
+│       <b>Work</b>:  Frontend web developer at Quipper/Recruit MP   │
 │                                                             │
-│     GitHub:  <a href="https://github.com/kazuma1989">https://github.com/kazuma1989</a>                  │
-│   LinkedIn:  <a href="https://linkedin.com/in/kazuma1989">https://linkedin.com/in/kazuma1989</a>             │
-│      Email:  <a href="mailto:kazuma.ebina@quipper.com">kazuma.ebina@quipper.com</a>                       │
+│     <b>GitHub</b>:  <a href="https://github.com/kazuma1989">https://github.com/kazuma1989</a>                  │
+│   <b>LinkedIn</b>:  <a href="https://linkedin.com/in/kazuma1989">https://linkedin.com/in/kazuma1989</a>             │
+│      <b>Email</b>:  <a href="mailto:kazuma.ebina@quipper.com">kazuma.ebina@quipper.com</a>                       │
 │                                                             │
-│       Card:  npx kazuma1989                                 │
+│       <b>Card</b>:  npx kazuma1989                                 │
 │                                                             │
 ╰─────────────────────────────────────────────────────────────╯
 
+$ <span class="blink">_</span>
 </pre>
+    </div>
   </body>
 </html>
